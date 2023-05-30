@@ -1,13 +1,20 @@
+import { createAboutTemplate } from "../templates/templates-creator";
+import profilResource from "../../globals/profil-resource.js";
+
 const About = {
     async render() {
       return `
-        <h2>Halaman Favorit SIDGI</h2>
-        <h3>memuat data diri tim capstone</h3>
+      <div id="about" class="about"></div>
       `;
     },
    
     async afterRender() {
-      // Fungsi ini akan dipanggil setelah render()
+      const profil = await profilResource.listProfil();
+      const profilContainer = document.querySelector('#about');
+      console.log(profil);
+      profil.profil.forEach((abouts) => {
+        profilContainer.innerHTML += createAboutTemplate(abouts);
+      });
     },
   };
    

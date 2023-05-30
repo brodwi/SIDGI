@@ -1,0 +1,25 @@
+{
+    "profil":[
+        {
+            "nama": "Cahyo Dwi",
+            "kampus": "unwidha",
+            "contact": "https://github.com/brodwi",
+            "gambar": "https://foto-beta.vercel.app/src/cahyo.jpg"
+        },
+        {
+            "nama": "Agustina",
+            "kampus": "ITB AAS",
+            "contact": "github.com/wildan"
+        },
+        {
+            "nama": "wildan ibra",
+            "kampus": "amikom",
+            "contact": "github.com/wildan"
+        },
+        {
+            "nama": "Fadhila",
+            "kampus": "ITB AAS",
+            "contact": "github.com/wildan"
+        }
+    ]
+}
