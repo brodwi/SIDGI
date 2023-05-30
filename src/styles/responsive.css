@@ -1,0 +1,34 @@
+@media screen and (max-width:550px) {
+    .navbar-sidgi {
+        flex-direction: column;
+        transition: 0.3s;
+        align-items: center;
+        justify-content: right;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.792);
+        width: 100%;
+        height: auto;
+        top: 84px;
+        right: -100%;
+    }
+
+    .navbar-sidgi ul { 
+        flex-direction: column;
+        text-align: center;
+    }    
+    
+    .navbar-sidgi ul li a:hover {
+       color: rgb(188, 186, 186);
+    }
+  
+    .navbar-sidgi ul li a{
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+  
+    }
+    .btn-hamburger button{
+        display: block;
+        color: white;
+    }
+
+}
