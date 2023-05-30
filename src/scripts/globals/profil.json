@@ -9,18 +9,18 @@
         {
             "nama": "Agustina",
             "kampus": "ITB AAS",
-            "contact": "github.com/Anggaranii",
+            "contact": "https://github.com/Anggaranii",
             "gambar": "https://foto-beta.vercel.app/src/agustina.jpg"
         },
         {
             "nama": "wildan ibra",
             "kampus": "amikom",
-            "contact": "github.com/wildanibr"
+            "contact": "https://github.com/wildanibr"
         },
         {
             "nama": "Fadhila",
             "kampus": "ITB AAS",
-            "contact": "github.com/fadhilahgi",
+            "contact": "https://github.com/fadhilahgi",
             "gambar": "https://foto-beta.vercel.app/src/fadhila.jpg"
         }
     ]
