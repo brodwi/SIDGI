@@ -2,25 +2,29 @@
     "profil":[
         {
             "nama": "Cahyo Dwi",
-            "kampus": "unwidha",
+            "id": "f161xb433",
+            "kampus": "Universitas Widya Dharma Klaten",
             "contact": "https://github.com/brodwi",
             "gambar": "https://foto-beta.vercel.app/src/cahyo.jpg"
         },
         {
             "nama": "Agustina",
-            "kampus": "ITB AAS",
+            "id": "f055yb221",
+            "kampus": "Institut Teknologi Bisnis AAS Indonesia",
             "contact": "https://github.com/Anggaranii",
             "gambar": "https://foto-beta.vercel.app/src/agustina.jpg"
         },
         {
             "nama": "wildan ibra",
-            "kampus": "amikom",
+            "id": "f055yb227",
+            "kampus": "STIMIK AMIKOM Surakarta",
             "contact": "https://github.com/wildanibr",
             "gambar": ""
         },
         {
             "nama": "Fadhila",
-            "kampus": "ITB AAS",
+            "id": "f083xb393",
+            "kampus": "Institut Teknologi Bisnis AAS Indonesia",
             "contact": "https://github.com/fadhilahgi",
             "gambar": "https://foto-beta.vercel.app/src/fadhila.jpg"
         }
