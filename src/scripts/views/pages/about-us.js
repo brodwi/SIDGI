@@ -1,5 +1,5 @@
 import { createAboutTemplate } from "../templates/templates-creator";
-import profilResource from "../../globals/profil-resource.js";
+import profilResource from "../../data/profil-resource";
 
 const About = {
     async render() {
@@ -11,7 +11,6 @@ const About = {
     async afterRender() {
       const profil = await profilResource.listProfil();
       const profilContainer = document.querySelector('#about');
-      console.log(profil);
       profil.profil.forEach((abouts) => {
         profilContainer.innerHTML += createAboutTemplate(abouts);
       });
