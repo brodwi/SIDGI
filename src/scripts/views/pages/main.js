@@ -1,3 +1,5 @@
+import gunungResource from "../../data/gunung-resource";
+
 const Main = {
   async render() {
     return `
@@ -7,7 +9,8 @@ const Main = {
   },
  
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
+    const gunung = await gunungResource.listGunung();
+    console.log(gunung);
   },
 };
  
