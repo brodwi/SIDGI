@@ -11,6 +11,7 @@ const createAboutTemplate = (profil) => `
       </div>
       <div class="card-content">
         <h2 class="name">${profil.nama}</h2>
+        <p class="id">${profil.id}</p>
         <p class="description">${profil.kampus}</p>
         <a href="${profil.contact}"><button  class="button">Contact</button></a>
       </div>

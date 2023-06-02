@@ -3,7 +3,9 @@ import profilResource from "../../data/profil-resource";
 
 const About = {
     async render() {
-      return `
+      return `   
+      <h3 class="about-us">Meet Our Team</h3>
+      <h4 class="about-us">C23-M4064</h4>
       <div id="about" class="about"></div>
       `;
     },
