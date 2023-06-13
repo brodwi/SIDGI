@@ -212,3 +212,77 @@ color: #3d3d3d;
 .button:hover {
   background-color: #2F0F5D;
 }
+
+
+
+/*
+Main
+*/
+
+.main {
+  /* margin: 30px 30px 30px; */
+  margin: auto;
+  text-align: left;
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 80px;
+  grid-template-columns: repeat(2, 1fr);
+  /* gap: 100px; */
+  /* row-gap: 50px;
+  column-gap: 100px; */
+  width: 80%;
+  padding: 20px;
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+}
+
+/* .card-gunung {
+  width: 150px;
+  border-radius: 25px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+} */
+
+.gunung-item {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 30px;
+}
+
+/* .gunung-item__header {
+  position: relative;
+}
+
+.gunung-item .gunung-item__header .gunung-item__header__poster {
+  width: 100%;
+} */
+
+.gunung-item .gunung-item__content {
+  padding: 16px;
+}
+
+.gunung-item .gunung-item__content h3 {
+  margin: 0 0 10px 0;
+}
+
+.gunung-item .gunung-item__content h3 a {
+  color: saddlebrown;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.gunung-item .gunung-item__content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
