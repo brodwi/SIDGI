@@ -1,7 +1,6 @@
 const createAboutTemplate = (profil) => `
 <div class="about-container">
 <div class="slide-content">
-  <div class="card-wrapper">
     <div class="card">
       <div class="image-content">
         <span class="overlay"></span>
@@ -16,7 +15,6 @@ const createAboutTemplate = (profil) => `
         <a href="${profil.contact}"><button  class="button">Contact</button></a>
       </div>
     </div>
-  </div>
 </div>
 </div>`;
 export {createAboutTemplate}
