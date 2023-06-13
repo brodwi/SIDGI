@@ -1,3 +1,16 @@
+const createMountainItemTemplate = (gunung) => `
+  <div class="card-gunung">
+  <div class="gunung-item">
+    
+    <div class="gunung-item__content">
+      <h3 class="gunung__title"><a href="/#/detail">${gunung.nama}</a></h3>
+      <p>${gunung.nama}</p>
+      <p>${gunung.status}</p>
+    </div>
+  </div>
+  </div>
+`;
+
 const createAboutTemplate = (profil) => `
 <div class="about-container">
 <div class="slide-content">
@@ -17,4 +30,8 @@ const createAboutTemplate = (profil) => `
     </div>
 </div>
 </div>`;
-export {createAboutTemplate}
+
+export {
+  createMountainItemTemplate,
+  createAboutTemplate,
+}
