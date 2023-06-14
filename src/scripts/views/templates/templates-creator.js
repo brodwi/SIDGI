@@ -1,7 +1,7 @@
 const createMountainItemTemplate = (gunung) => `
   <div class="card-gunung">
   <div class="gunung-item">
-    
+  <img class="gunung-poster" src="${gunung.gambar}" alt="${gunung.nama}" ></img>
     <div class="gunung-item__content">
       <h3 class="gunung__title"><a href="/#/detail">${gunung.nama}</a></h3>
       <p>${gunung.nama}</p>
