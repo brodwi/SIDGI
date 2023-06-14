@@ -129,21 +129,16 @@ color: #3d3d3d;
 } */
 /*navbar*/
 /*about*/
-.about {
-  min-height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .about-us {
   text-align: center;
   padding: 20px;
 }
-.list {
+.about {
   margin: 32px auto auto;
   text-align: left;
   display: grid;
   grid-row-gap: 16px;
+  width: fit-content;
 }
 .about-container {
   justify-content: center;
@@ -151,13 +146,13 @@ color: #3d3d3d;
   display: flex;
   width: auto;
   height: auto;
-  padding: 40px 0;
+  padding: 10px 0;
 }
 .slide-content {
   margin: 0 20px;
 }
 .card {
-  width: 250px;
+  width: 300px;
   border-radius: 25px;
   background-color: #F5F3C1;
 }
