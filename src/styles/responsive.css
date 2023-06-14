@@ -33,6 +33,9 @@
     .navbar-sidgi.btn-on{
         right: 0;
     }
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 @media screen and (min-width: 700px) {
     .about {
@@ -40,5 +43,8 @@
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 10px;
       grid-row-gap: 16px;
+    }
+    .main {
+        grid-template-columns: repeat(2, 1fr);
     }
   }

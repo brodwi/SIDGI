@@ -265,11 +265,13 @@ Main
 
 /* .gunung-item__header {
   position: relative;
-}
-
-.gunung-item .gunung-item__header .gunung-item__header__poster {
-  width: 100%;
 } */
+
+.gunung-poster {
+  width: 100%;
+  max-height: 150px;
+  object-fit: fill;
+}
 
 .gunung-item .gunung-item__content {
   padding: 16px;
