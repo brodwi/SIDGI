@@ -3,11 +3,31 @@ const createMountainItemTemplate = (gunung) => `
   <div class="gunung-item">
   <img class="gunung-poster" src="${gunung.gambar}" alt="${gunung.nama}" ></img>
     <div class="gunung-item__content">
-      <h3 class="gunung__title"><a href="/#/detail">${gunung.nama}</a></h3>
+      <h3 class="gunung__title"><a href="/#/detail/${gunung.id}">${gunung.nama}</a></h3>
       <p>${gunung.nama}</p>
       <p>${gunung.status}</p>
     </div>
   </div>
+  </div>
+`;
+
+const createGunungDetailTemplate = (gunung) => `
+  <h2 class="gunung__name">${gunung.nama}</h2>
+  <img class="gunung__image" src="${gunung.gambar}" alt="${gunung.nama}" crossorigin="anonymous"/>
+  <div class="gunung__info">
+    <h3>Information</h3>
+    <h4>Bentuk</h4>
+    <p>${gunung.bentuk}</p>
+    <h4>Tinggi</h4>
+    <p>${gunung.tinggi}</p>
+    <h4>Letusan Terakhir</h4>
+    <p>${gunung.letusan_terakhir}</p>
+    <h4>Geolokasi</h4>
+    <p>${gunung.geolokasi}</p>
+    <h4>status</h4>
+    <p>${gunung.status}</p>
+    <h4>Keamanan</h4>
+    <p>${gunung.keamanan}</p>
   </div>
 `;
 
@@ -34,4 +54,5 @@ const createAboutTemplate = (profil) => `
 export {
   createMountainItemTemplate,
   createAboutTemplate,
+  createGunungDetailTemplate
 }

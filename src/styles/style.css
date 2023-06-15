@@ -296,3 +296,25 @@ Main
   -webkit-line-clamp: 4; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
+
+/* halaman detail */
+.detailGunung {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.gunung__name{
+  text-align: center;
+}
+
+.detailGunung .gunung__image {
+  width: 100%;
+}
+
+.detailGunung .gunung__info h4 {
+  padding-top:10px ;
+  padding-bottom: 10px;
+  color: #393646;
+}

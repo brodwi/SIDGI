@@ -1,8 +1,15 @@
-import data from '../globals/gunung.json';
+import API_ENDPOINT from '../globals/api-endpoint';
+
 class gunungResource {
     static async listGunung() {
-        const response = await data;
-        return response;
-    }
+        const response = await fetch(API_ENDPOINT.DAFTAR);
+        const responseJson = await response.json();
+        return responseJson;
+      }
+      static async detailGunung(id) {
+        const response = await fetch(API_ENDPOINT.DETAIL(id));
+        const responseJson = await response.json();
+        return responseJson;
+      }
 }
 export default gunungResource;

@@ -12,10 +12,9 @@ const Main = {
   async afterRender() {
     const gunung = await gunungResource.listGunung();
     const gunungContainer = document.querySelector('#main');
-    gunung.gunung.forEach((mains) => {
+    gunung.data.gunung.forEach((mains) => {
       gunungContainer.innerHTML += createMountainItemTemplate(mains);
     });
-    // console.log(gunung);
   },
 };
  
