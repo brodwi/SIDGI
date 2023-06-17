@@ -24,11 +24,23 @@ const createGunungDetailTemplate = (gunung) => `
     <p>${gunung.letusan_terakhir}</p>
     <h4>Geolokasi</h4>
     <p>${gunung.geolokasi}</p>
-    <h4>status</h4>
+    <h4>Status</h4>
     <p>${gunung.status}</p>
     <h4>Keamanan</h4>
     <p>${gunung.keamanan}</p>
   </div>
+`;
+
+const createLikeButtonTemplate = () => `
+  <button aria-label="like this mountain" id="likeButton" class="like">
+     <i class="fa fa-heart-o" aria-hidden="true"></i>
+  </button>
+`;
+ 
+const createLikedButtonTemplate = () => `
+  <button aria-label="unlike this mountain" id="likeButton" class="like">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+  </button>
 `;
 
 const createAboutTemplate = (profil) => `
@@ -53,6 +65,8 @@ const createAboutTemplate = (profil) => `
 
 export {
   createMountainItemTemplate,
+  createLikeButtonTemplate,
+  createLikedButtonTemplate,
   createAboutTemplate,
   createGunungDetailTemplate
 }
