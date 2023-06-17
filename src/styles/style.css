@@ -64,6 +64,20 @@ nav{
   display: none;
 }
 
+.searchinputcontainer{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 300px;
+  border: 2px solid #1C6758;
+  border-radius: 8px;
+}
+
+.judulsearch{
+  margin-top: 30px;
+  color: #1C6758;
+}
+
  /*
   Jumbotron
 */
