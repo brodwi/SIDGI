@@ -1,7 +1,10 @@
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
 const createMountainItemTemplate = (gunung) => `
   <div class="card-gunung">
   <div class="gunung-item">
-  <img class="gunung-poster" src="${gunung.gambar}" alt="${gunung.nama}" ></img>
+  <img class="gunung-poster lazyload" data-src="${gunung.gambar}" alt="${gunung.nama}" ></img>
     <div class="gunung-item__content">
       <h3 class="gunung__title"><a href="/#/detail/${gunung.id}">${gunung.nama}</a></h3>
       <p>${gunung.nama}</p>
