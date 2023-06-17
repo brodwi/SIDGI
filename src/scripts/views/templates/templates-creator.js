@@ -7,8 +7,9 @@ const createMountainItemTemplate = (gunung) => `
   <img class="gunung-poster lazyload" data-src="${gunung.gambar}" alt="${gunung.nama}" ></img>
     <div class="gunung-item__content">
       <h3 class="gunung__title"><a href="/#/detail/${gunung.id}">${gunung.nama}</a></h3>
-      <p>${gunung.nama}</p>
-      <p>${gunung.status}</p>
+      <p>Status : ${gunung.status}</p>
+      <p>Keamanan : ${gunung.keamanan}</p>
+      <p>Lokasi : <a href="https://www.google.com/maps/place/${gunung.geolokasi}">${gunung.geolokasi}</a></p>
     </div>
   </div>
   </div>
@@ -22,11 +23,11 @@ const createGunungDetailTemplate = (gunung) => `
     <h4>Bentuk</h4>
     <p>${gunung.bentuk}</p>
     <h4>Tinggi</h4>
-    <p>${gunung.tinggi}</p>
+    <p>${gunung.tinggi_meter}</p>
     <h4>Letusan Terakhir</h4>
-    <p>${gunung.letusan_terakhir}</p>
+    <p>${gunung.estimasi_letusan_terakhir}</p>
     <h4>Geolokasi</h4>
-    <p>${gunung.geolokasi}</p>
+    <p><a href="https://www.google.com/maps/place/${gunung.geolokasi}">${gunung.geolokasi}</a></p>
     <h4>Status</h4>
     <p>${gunung.status}</p>
     <h4>Keamanan</h4>
