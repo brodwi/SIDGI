@@ -1,14 +1,20 @@
+import FavoriteGunungIdb from '../../data/favorite-gunung-idb';
+import { createMountainItemTemplate } from '../templates/templates-creator';
+
 const Favorite = {
-    async render() {
-      return `
-        <h2>Halaman Favorit SIDGI</h2>
-        <h3>memuat tampilan item favorite</h3>
-      `;
-    },
+  async render() {
+    return `
+      <div id="main" class="main"></div>
+    `;
+  },
    
-    async afterRender() {
-      // Fungsi ini akan dipanggil setelah render()
-    },
-  };
+  async afterRender() {
+    const gunungs = await FavoriteGunungIdb.getAllGunungs();
+    const gunungsContainer = document.querySelector('#main');
+    gunungs.forEach((gunung) => {
+      gunungsContainer.innerHTML += createMountainItemTemplate(gunung);
+    });
+  },
+};
    
-  export default Favorite;
+export default Favorite;

@@ -21,13 +21,15 @@ const Detail = {
     LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       gunung: {
-        nama: gunung.nama,
-        bentuk: gunung.bentuk,
-        tinggi: gunung.tinggi,
-        letusan_terakhir: gunung.letusan_terakhir,
-        geolokasi: gunung.geolokasi,
-        status: gunung.status,
-        keamanan: gunung.keamanan,
+        id: detailgunung.id,
+        nama: detailgunung.nama,
+        bentuk: detailgunung.bentuk,
+        tinggi: detailgunung.tinggi,
+        letusan_terakhir: detailgunung.letusan_terakhir,
+        geolokasi: detailgunung.geolokasi,
+        status: detailgunung.status,
+        keamanan: detailgunung.keamanan,
+        gambar: detailgunung.gambar,
       },
     });
   },
