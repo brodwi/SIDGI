@@ -9,7 +9,7 @@ const createMountainItemTemplate = (gunung) => `
       <h3 class="gunung__title"><a href="/#/detail/${gunung.id}">${gunung.nama}</a></h3>
       <p>Status : ${gunung.status}</p>
       <p>Keamanan : ${gunung.keamanan}</p>
-      <p>Lokasi : <a href="https://www.google.com/maps/place/${gunung.geolokasi}">${gunung.geolokasi}</a></p>
+      <p>Geolokasi : <a href="https://www.google.com/maps/place/${gunung.geolokasi}">${gunung.geolokasi}</a></p>
     </div>
   </div>
   </div>
