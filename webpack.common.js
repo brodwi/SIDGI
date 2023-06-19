@@ -42,6 +42,39 @@ module.exports = {
     }),
     new WorkboxWebpackPlugin.GenerateSW({
       swDest: './sw.bundle.js',
+      runtimeCaching: [
+        {
+          urlPattern: /^https:\/\/api-gunung.vercel.app\//,
+          handler: 'StaleWhileRevalidate',
+          options: {
+            cacheName: 'Gunungs',
+            cacheableResponse: {
+              statuses: [200],
+            },
+          },
+        },
+        {
+          urlPattern: /^https:\/\/foto-gunung.vercel.app\//,
+          handler: 'StaleWhileRevalidate',
+          options: {
+            cacheName: 'img',
+            cacheableResponse: {
+              statuses: [200],
+            },
+          },
+        },
+        {
+          urlPattern: /^https:\/\/foto-gunung.vercel.app\//,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'IMAGE-CACHE',
+            expiration: {
+              maxEntries: 10,
+              maxAgeSeconds: 30 * 24 * 60 * 60,
+            },
+          },
+        },
+      ],
     }),
   ],
 };
