@@ -32,7 +32,6 @@
     }
     .navbar-sidgi.btn-on{
         right: 0;
-        z-index: 10;
     }
     .main {
         grid-template-columns: repeat(1, 1fr);

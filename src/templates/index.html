@@ -22,6 +22,7 @@
       <div class="btn-hamburger" id="hamburgerButton">
         <button>&#9776;</button>
       </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 
       <div class="navbar-sidgi" id="navigationDrawer">
         <ul>
@@ -43,4 +44,18 @@
 <footer>
   <p>C23-M4064 Dicoding | © 2023 - Sistem Informasi Data Gunung Indonesia</a></p>
 </footer>
+<script>
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+      } else {
+          document.getElementById("myBtn").style.display = "none";
+      }
+  }
+  function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+  </script>
 </html>
